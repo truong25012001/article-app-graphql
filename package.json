@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.ts",
-    "build": "tsc && node copy-dir.js",
+    "build": "tsc",
     "ts.check": "tsc --project tsconfig.json",
+    "add-build": "git add dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "pre-commit": [
@@ -20,6 +21,7 @@
     "apollo-server-express": "^3.13.0",
     "dotenv": "^16.4.5",
     "express": "^4.18.3",
+    "fs-extra": "^11.2.0",
     "graphql": "^16.8.1",
     "md5": "^2.3.0",
     "mongoose": "^8.2.2"
